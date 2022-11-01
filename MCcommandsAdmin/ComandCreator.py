@@ -1,8 +1,13 @@
-#This code has been jumbled to try to prevent people to coppy it
+#This code has been jumbled to try to prevent less advanced people to try copy it
 
+#Tho if you know what your doing and want to impove it then feel free to 
 
 #welcome to MJDawson's command sender
 
+
+#This is just random and is responsible for the welcome message
+
+#There is actually a patten with the names - other than opps and oppsagain
 cowfinger = "D"
 winner = "o"
 rat = "c"
@@ -34,6 +39,7 @@ cowcow = "J"
 cowpong = "o"
 pong = " "
 fingereleven = "a"
+#Ha fatfat
 fatfat = "e"
 fatcow = "n"
 fatrat = "r"
@@ -42,9 +48,13 @@ fingerrat = "m"
 fingerabout = "d"
 about = "t"
 
+
+#This is what happens when you type ]go[
 def sendCommand():
     print("Your command is:")
     print("")
+    
+    #This is where the end of the command is added to the rest and added up
     print(command + '''
 {id:command_block_minecart,Command:'setblock ~0 ~0 ~ fire[age=15]'},
 ]}''')
@@ -53,13 +63,18 @@ def sendCommand():
 
 #welcome to MJDawson's command sender
 print(f"{cow}{finger}{fat}{rat}{eleven}{oops}{oopsagain}{pong}{about}{winner}{coppyright}{cowdrone}{cowcow}{cowfinger}{cowfat}{cowrat}{coweleven}{cowpong}{cowabout}{cowwinner}{cowcoppyright}{fingerdrone}{fingercow}{fingerfinger}{fingerfat}{fingerrat}{fingereleven}{fingerpong}{fingerabout}{fingerwinner}{fingercoppyright}{fatdrone}{fatcow}{fatfinger}{fatfat}{fatrat}{fateleven}{fatpong}")
-print()
+
+#This is the helpful bit
 print('''1000 Commands Max!
 
 Type "]go[" to generate your command.
 
 Don't add the "/" before''')
 
+
+#I know this is really not effient, but I was in a rush for this code
+
+#Command one is differnt to all the rest
 com1 = input("Command 1 - ")
 if com1 == "]go[":
     #print error
@@ -69,6 +84,7 @@ else:
     command = ('''summon falling_block ~ ~1 ~ {ByMJDawson:1,Time:1,BlockState:{Name:'activator_rail'},Passengers:[
 {id:command_block_minecart,Command:''''' + "'" + com1 + ''''},''')
 
+#This one just basically repeats up to 999
 
 com2 = input("Command 2 - ")
 if com2 == "]go[":
@@ -8051,5 +8067,8 @@ else:
     command = (command + '''
 {id:command_block_minecart,Command:''''' + "'" + com999 + ''''},''')
 
+#This is just 👌 to let the crazy commanded people that they hav reached the end
 print("Command limit reached")
+
+#This fixes the script just closing at the end, with just one line, rather that importing things
 input()
